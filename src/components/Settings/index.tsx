@@ -8,7 +8,7 @@ type Props  = {
 export function Settings({ username }:Props) {
     return (
         <Container>
-            <Title>Settings for {username}</Title>
+            <Title>Configurações de {username}</Title>
         </Container>
     );
 }

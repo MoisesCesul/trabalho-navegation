@@ -11,7 +11,7 @@ export function Profile({ route }) {
     return (
         <Tab.Navigator>
             <Tab.Screen 
-                name="Settings" 
+                name="Configurações" 
                 options={{
                     tabBarLabel: 'Configurações', 
                     tabBarIcon: ({ color, size }) => (
@@ -22,7 +22,7 @@ export function Profile({ route }) {
                 {() => <Settings username={username} />}
             </Tab.Screen>
             <Tab.Screen 
-                name="History" 
+                name="Histórico" 
                 options={{
                     tabBarLabel: 'Histórico', 
                     tabBarIcon: ({ color, size }) => (
