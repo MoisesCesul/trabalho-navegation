@@ -6,9 +6,10 @@ import { useState } from 'react';
 export function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigation = useNavigation();
     const handleLogin = () => {
         console.log('Login pressed', { email, password });
+        navigation.navigate('Profile', { username: email });
     };
 
     return (

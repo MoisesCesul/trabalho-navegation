@@ -1,19 +1,24 @@
+// AppRoutes.tsx
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Login } from '@screens/Login'; 
+import { Profile } from '@screens/Profile'; 
 
-const {Navigator,Screen} = createNativeStackNavigator()
+const { Navigator, Screen } = createNativeStackNavigator();
 
-export function AppRoutes(){
-    
+export function AppRoutes() {
     return (
         <Navigator
-        initialRouteName="login"
-        screenOptions={{headerShown: false}}
+            initialRouteName="Login" 
+            screenOptions={{ headerShown: false }}
         >
             <Screen
-            name="login"
-            component={Login}
+                name="Login" 
+                component={Login}
             />
-        
+            <Screen
+                name="Profile" 
+                component={Profile}
+            />
         </Navigator>
-    )
+    );
 }
